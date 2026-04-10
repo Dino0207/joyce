@@ -1,0 +1,211 @@
+:root{
+    --primary-color: #6F4E37;
+    --secondary-color: #D7B48B;
+    --background-color: #E8D3B9;
+    --text-color: #4B2C20;
+    --white: #fff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: fixed;
+  width: 100%;
+  height: 3.2rem;
+  align-content: center;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.body-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--background-color);
+  height: 45vh;
+  background-color: var(--primary-color);
+  padding: 5rem 0px 2rem;
+}
+
+.hero {
+  font-size: 1.5rem;
+  gap: 1rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.index {
+  margin-top: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  display: flex;
+  gap: 1rem;
+  margin-left: 70px;
+  margin-right: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  margin-top: -40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  display: flex;
+  gap: 1rem;
+  margin-left: 70px;
+  margin-right: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: var(--primary-color);
+  padding: 5rem;
+  color: var(--background-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.gallery {
+  margin-top: 5px;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 10px;
+  align-content: center;
+}
+
+.gallery-item {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 0px 0px;
+  text-transform: uppercase;
+  align-content: center;
+}
+.gallery-item:hover{
+  opacity: 1;
+  box-shadow: var(--shadow);
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-text{
+    width: 100%;
+    background-color: var(--white);
+    float: bottom;
+    bottom: 0;
+    position: absolute;
+    color: var(--text-color);
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-align: left;
+}
+
+.about-content {
+  background-color: var(--primary-color);
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.about-content h1 {
+    color: var(--background-color);
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+.about-p {
+    padding: 2.5rem 6rem ;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
